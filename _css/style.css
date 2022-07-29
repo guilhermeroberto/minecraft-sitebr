@@ -1,0 +1,391 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #0ae;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(99, 99, 99);
+    padding: 5px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+header nav ul li a {
+    font-size: 15px;
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+footer {
+    background-color: #5a5a5a;
+    padding: 2px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .redes-sociais-footer img {
+    width: 35px;
+}
+
+.ip {
+    color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+.ip h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.ip h2 {
+    margin-top: -20px;
+    font-size: 15px;
+}
+
+.informacoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+    background-color: #dddddd;
+}
+
+#item {
+    margin-left: 80px;
+    text-align: center;
+}
+
+#item img {
+    height: 50px;
+}
+
+#item h1 {
+    margin-top: 5px;
+}
+
+#item p {
+    margin-top: -15px;
+}
+
+.informacoes2 {
+    display: grid;
+    margin: 0 auto;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Início e fim tamanho de cada coluna */
+    grid-template-rows: .2fr .2fr; /* Possui somente 1 linha e tamanho dela */
+    grid-template-areas: "staff box1 box2 discord" "staff box3 b c";
+    gap: 30px 10px;
+    padding: 30px;
+    max-width: 100%;
+    height: 100%;
+}
+
+.discord {
+    grid-area: discord;
+}
+
+.staff-div {
+    padding: 10px 40px 10px 40px;
+    border: 4px solid #dddddd;
+    border-radius: 10px;
+    grid-area: staff;
+    height: 300px;
+}
+
+.boxes {
+    text-align: center;
+}
+
+.boxes a {
+    border: 1px solid black;
+    color: black;
+    border-radius: 2px;
+    padding: 10px 20px 10px 20px;
+    transition: .2s all;
+}
+
+.boxes p {
+    margin: -10px auto 30px auto;
+}
+
+.boxes a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.grid-box1 {
+    grid-area: box1;
+}
+
+.grid-box2 {
+    grid-area: box2; 
+}
+
+.grid-box3 {
+    margin-top: -150px;
+    grid-area: box3;
+}
+
+.staff-div h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.staff-div p {
+    line-height: 10px;
+    text-align: center;
+}
+
+.staff-div a {
+    color: black;
+    font-weight: bolder;
+}
+
+/* Regras.html */
+.regras-top {
+    padding: 10px 10px 10px 50px;
+}
+
+.regras-top hr {
+    width: 100%;
+}
+
+.regras-top h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.regras-top p {
+    color: #5a5a5a;
+    margin-top: -30px;
+}
+
+.regras-texts {
+    padding: 10px 40px 40px 40px;
+    text-align: center;
+}
+
+.regras-texts p {
+    text-align: left;
+}
+
+.regras-texts h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: -10px;
+}
+
+/* Horas.html */
+.eventos {
+    text-align: center;
+    width: 100%;
+    margin: 40px auto 40px auto;
+}
+
+.eventos h2 {
+    text-transform: uppercase;
+    margin-bottom: -10px;
+    font-size: 40px;
+}
+
+.eventos .tabela {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.tabela .item {
+    padding: 10px 20px 10px 20px;
+}
+
+.eventos h1 {
+    margin-bottom: -5px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+hr {
+    border: 1px dashed black;
+}
+
+/* Loja.html */
+.loja {
+    text-align: center;
+    margin: 40px auto 40px auto;
+    width: 100%;
+    height: 100%;
+}
+
+.loja-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.loja-flex .item {
+    margin: 10px 40px 10px 40px;
+    border: 4px solid black;
+    border-radius: 5px;
+    padding: 30px 30px 30px 30px;
+}
+
+.loja-flex .item h1 {
+    margin-top: -2px;
+}
+
+.loja-flex .item p {
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+.loja-flex .item a {
+    padding: 5px 20px 5px 20px;
+    border: 2px solid black;
+    color: rgb(0, 255, 55);
+    transition: .2s all;
+}
+
+.loja-flex .item a:hover {
+    font-weight: bolder;
+    background-color: rgba(0, 255, 55, .1);;
+}
+
+/* Loja VIP */
+.loja-vip {
+    margin: 40px auto 40px auto;
+    width: 80%;
+    height: 100%;
+}
+
+.loja-vip h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.vip-vantagens {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.vip-vantagens-item {
+    width: auto;
+    height: 850px;
+    margin: auto 50px 80px 50px;
+}
+
+.vip-vantagens-item p {
+    font-size: 15px;
+}
+
+.vip-vantagens-item p img {
+    margin: auto 10px -8px auto;
+}
+
+.vip-botao {
+    margin: 30px auto auto auto;
+    text-align: center;
+}
+
+.vip-vantagens-item a {
+    border: 3px solid black;
+    padding: 5px 20px 5px 20px;
+    text-transform: uppercase;
+    color: black;
+    transform: .2s all;
+}
+
+.vip-vantagens-item a:hover {
+    color: rgb(0, 255, 55);
+}
+
+.vip-perms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vip-perms-item {
+    margin: 10px 50px 10px 50px;
+}
+
+.vip-perms-sec {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsividade  */
+
+@media (max-width: 1060px) {
+    .informacoes2 {
+        grid-template-columns: 1fr 1fr; /* Início e fim tamanho de cada coluna */
+        grid-template-rows: .2fr .2fr .2fr; /* 2 linhas */
+        grid-template-areas: "staff box" "discord box2" "box3 a";
+    }
+    .grid-box3 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1470px) {
+    .vip-vantagens-item {
+        margin: auto auto 100px auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .vip-vantagens-item {
+        margin: auto auto 200px auto;
+    }
+}
